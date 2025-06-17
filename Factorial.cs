@@ -1,18 +1,24 @@
 //Factorial
-
-static void Main()
+using System;
+namespace assignments
 {
-	 Console.WriteLine("Enter a number: ");
+	public class Factorial
 	{
-	int num = intParse(Console.ReadLine());
+		static void Main(String[] args)
+		{
+  		    Console.WriteLine("Enter a number: ");
+
+			//convert from string to int
+		    int num = int.Parse(Console.ReadLine());
 	
-	long factorial = 1;
-	for(int i = 1; i<=num; i++);
-	{
-		factorial *= i;
-	}
+	            int factorial = 1;
+		    for(int i = 1; i<=num; i++);
+	        {
+		factorial = factorial*i;
+	        }
 	
-	Console.WriteLine("Factorial"+ num + "is:"+ factorial);
+	        Console.WriteLine($"Factorial of {num} is:{factorial}");
+		    Console.ReadLine();
 }
 
 }
